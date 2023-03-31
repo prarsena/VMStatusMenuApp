@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D0320A4229903E4700A77A19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0320A4129903E4700A77A19 /* AppDelegate.swift */; };
+		D0320A4429903E4700A77A19 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0320A4329903E4700A77A19 /* ContentView.swift */; };
+		D0320A4629903E4A00A77A19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0320A4529903E4A00A77A19 /* Assets.xcassets */; };
+		D0320A4929903E4A00A77A19 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0320A4829903E4A00A77A19 /* Preview Assets.xcassets */; };
+		D0320A4C29903E4A00A77A19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0320A4A29903E4A00A77A19 /* Main.storyboard */; };
+		D0320A562990411300A77A19 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0320A552990411300A77A19 /* Functions.swift */; };
+		D0E2BA03299200C300E69F5F /* XPCHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E2BA02299200C300E69F5F /* XPCHelper.m */; };
+		D0E2BA05299200C300E69F5F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E2BA04299200C300E69F5F /* main.m */; };
+		D0E2BA09299200C300E69F5F /* XPCHelper.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = D0E2B9FE299200C300E69F5F /* XPCHelper.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0E2BA07299200C300E69F5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0320A3629903E4600A77A19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0E2B9FD299200C300E69F5F;
+			remoteInfo = XPCHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D0E2BA0D299200C300E69F5F /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				D0E2BA09299200C300E69F5F /* XPCHelper.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D0320A3E29903E4700A77A19 /* VMStatusApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VMStatusApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0320A4129903E4700A77A19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D0320A4329903E4700A77A19 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D0320A4529903E4A00A77A19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0320A4829903E4A00A77A19 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D0320A4B29903E4A00A77A19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0320A4D29903E4A00A77A19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0320A4E29903E4A00A77A19 /* VMStatusApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VMStatusApp.entitlements; sourceTree = "<group>"; };
+		D0320A552990411300A77A19 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		D0E2B9FE299200C300E69F5F /* XPCHelper.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = XPCHelper.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0E2BA00299200C300E69F5F /* XPCHelperProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPCHelperProtocol.h; sourceTree = "<group>"; };
+		D0E2BA01299200C300E69F5F /* XPCHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPCHelper.h; sourceTree = "<group>"; };
+		D0E2BA02299200C300E69F5F /* XPCHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPCHelper.m; sourceTree = "<group>"; };
+		D0E2BA04299200C300E69F5F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D0E2BA06299200C300E69F5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0320A3B29903E4700A77A19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E2B9FB299200C300E69F5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0320A3529903E4600A77A19 = {
+			isa = PBXGroup;
+			children = (
+				D0320A4029903E4700A77A19 /* VMStatusApp */,
+				D0E2B9FF299200C300E69F5F /* XPCHelper */,
+				D0320A3F29903E4700A77A19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0320A3F29903E4700A77A19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0320A3E29903E4700A77A19 /* VMStatusApp.app */,
+				D0E2B9FE299200C300E69F5F /* XPCHelper.xpc */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0320A4029903E4700A77A19 /* VMStatusApp */ = {
+			isa = PBXGroup;
+			children = (
+				D0320A4129903E4700A77A19 /* AppDelegate.swift */,
+				D0320A4329903E4700A77A19 /* ContentView.swift */,
+				D0320A4529903E4A00A77A19 /* Assets.xcassets */,
+				D0320A4A29903E4A00A77A19 /* Main.storyboard */,
+				D0320A4D29903E4A00A77A19 /* Info.plist */,
+				D0320A4E29903E4A00A77A19 /* VMStatusApp.entitlements */,
+				D0320A4729903E4A00A77A19 /* Preview Content */,
+				D0320A552990411300A77A19 /* Functions.swift */,
+			);
+			path = VMStatusApp;
+			sourceTree = "<group>";
+		};
+		D0320A4729903E4A00A77A19 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D0320A4829903E4A00A77A19 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D0E2B9FF299200C300E69F5F /* XPCHelper */ = {
+			isa = PBXGroup;
+			children = (
+				D0E2BA00299200C300E69F5F /* XPCHelperProtocol.h */,
+				D0E2BA01299200C300E69F5F /* XPCHelper.h */,
+				D0E2BA02299200C300E69F5F /* XPCHelper.m */,
+				D0E2BA04299200C300E69F5F /* main.m */,
+				D0E2BA06299200C300E69F5F /* Info.plist */,
+			);
+			path = XPCHelper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0320A3D29903E4700A77A19 /* VMStatusApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0320A5129903E4A00A77A19 /* Build configuration list for PBXNativeTarget "VMStatusApp" */;
+			buildPhases = (
+				D0320A3A29903E4700A77A19 /* Sources */,
+				D0320A3B29903E4700A77A19 /* Frameworks */,
+				D0320A3C29903E4700A77A19 /* Resources */,
+				D0E2BA0D299200C300E69F5F /* Embed XPC Services */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0E2BA08299200C300E69F5F /* PBXTargetDependency */,
+			);
+			name = VMStatusApp;
+			productName = VMStatusApp;
+			productReference = D0320A3E29903E4700A77A19 /* VMStatusApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0E2B9FD299200C300E69F5F /* XPCHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0E2BA0A299200C300E69F5F /* Build configuration list for PBXNativeTarget "XPCHelper" */;
+			buildPhases = (
+				D0E2B9FA299200C300E69F5F /* Sources */,
+				D0E2B9FB299200C300E69F5F /* Frameworks */,
+				D0E2B9FC299200C300E69F5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XPCHelper;
+			productName = XPCHelper;
+			productReference = D0E2B9FE299200C300E69F5F /* XPCHelper.xpc */;
+			productType = "com.apple.product-type.xpc-service";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0320A3629903E4600A77A19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					D0320A3D29903E4700A77A19 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					D0E2B9FD299200C300E69F5F = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = D0320A3929903E4600A77A19 /* Build configuration list for PBXProject "VMStatusApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0320A3529903E4600A77A19;
+			productRefGroup = D0320A3F29903E4700A77A19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0320A3D29903E4700A77A19 /* VMStatusApp */,
+				D0E2B9FD299200C300E69F5F /* XPCHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0320A3C29903E4700A77A19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0320A4C29903E4A00A77A19 /* Main.storyboard in Resources */,
+				D0320A4929903E4A00A77A19 /* Preview Assets.xcassets in Resources */,
+				D0320A4629903E4A00A77A19 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E2B9FC299200C300E69F5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0320A3A29903E4700A77A19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0320A4429903E4700A77A19 /* ContentView.swift in Sources */,
+				D0320A4229903E4700A77A19 /* AppDelegate.swift in Sources */,
+				D0320A562990411300A77A19 /* Functions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E2B9FA299200C300E69F5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E2BA05299200C300E69F5F /* main.m in Sources */,
+				D0E2BA03299200C300E69F5F /* XPCHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0E2BA08299200C300E69F5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0E2B9FD299200C300E69F5F /* XPCHelper */;
+			targetProxy = D0E2BA07299200C300E69F5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D0320A4A29903E4A00A77A19 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0320A4B29903E4A00A77A19 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0320A4F29903E4A00A77A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D0320A5029903E4A00A77A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D0320A5229903E4A00A77A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VMStatusApp/VMStatusApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"VMStatusApp/Preview Content\"";
+				DEVELOPMENT_TEAM = UY66JBRX8P;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = VMStatusApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peterai.VMStatusApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D0320A5329903E4A00A77A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VMStatusApp/VMStatusApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"VMStatusApp/Preview Content\"";
+				DEVELOPMENT_TEAM = UY66JBRX8P;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = VMStatusApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peterai.VMStatusApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D0E2BA0B299200C300E69F5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = UY66JBRX8P;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = XPCHelper/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peterai.XPCHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D0E2BA0C299200C300E69F5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = UY66JBRX8P;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = XPCHelper/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peterai.XPCHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0320A3929903E4600A77A19 /* Build configuration list for PBXProject "VMStatusApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0320A4F29903E4A00A77A19 /* Debug */,
+				D0320A5029903E4A00A77A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0320A5129903E4A00A77A19 /* Build configuration list for PBXNativeTarget "VMStatusApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0320A5229903E4A00A77A19 /* Debug */,
+				D0320A5329903E4A00A77A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0E2BA0A299200C300E69F5F /* Build configuration list for PBXNativeTarget "XPCHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0E2BA0B299200C300E69F5F /* Debug */,
+				D0E2BA0C299200C300E69F5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0320A3629903E4600A77A19 /* Project object */;
+}
